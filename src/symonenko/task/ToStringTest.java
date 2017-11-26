@@ -24,6 +24,19 @@ public class ToStringTest extends junit.framework.TestCase {
     }
 
     @Test
+    public void testFilledCart() {
+        assertEquals(" # Item                   Price Quan. Discount     Total\n" +
+                        "---------------------------------------------------------\n" +
+                        " 1 Coca-Cola              $2.25    1      80%       $.45\n" +
+                        " 2 Bud Light              $3.50    1      10%      $3.15\n" +
+                        " 3 Best Milk For Kids     $1.75    2      50%      $1.75\n" +
+                        " 4 Super Clean Refre...   $9.99    1        -      $9.99\n" +
+                        "---------------------------------------------------------\n" +
+                        " 4                                                $15.34",
+                cart.toString());
+    }
+
+    @Test
     public void testHeader() {
         assertEquals( " # Item                   Price Quan. Discount     Total" +
                 "\n---------------------------------------------------------",

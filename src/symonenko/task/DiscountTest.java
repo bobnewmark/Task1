@@ -12,7 +12,7 @@ import static org.junit.Assert.assertEquals;
 @RunWith(Parameterized.class)
 public class DiscountTest {
 
-    private static final int[] Q_VALUES = {1, 9, 10, 19};
+    private static final int[] Q_VALUES = {1, 9, 10, 50};
     private static final Item.Type[] T_VALUES =
             {
                     Item.Type.SECOND,
@@ -25,7 +25,7 @@ public class DiscountTest {
                     { 0, 50, 50, 50 },
                     { 0, 0, 0, 0},
                     { 80 },
-                    { 10, 10, 20, 20}
+                    { 10, 10, 20, 50}
             };
     private Item.Type _type;
     private int _quantity;
